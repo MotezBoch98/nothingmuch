@@ -43,28 +43,8 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-primary btn-user btn-block">
+                                        <button style="color:#fff" type="submit" class="btn bg-info btn-user btn-block">
                                             {{ __('Login') }}
-                                        </button>
-                                    </div>
-
-                                    <hr>
-
-                                    <div class="form-group">
-                                        <button type="button" class="btn btn-github btn-user btn-block">
-                                            <i class="fab fa-github fa-fw"></i> {{ __('Login with GitHub') }}
-                                        </button>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <button type="button" class="btn btn-twitter btn-user btn-block">
-                                            <i class="fab fa-twitter fa-fw"></i> {{ __('Login with Twitter') }}
-                                        </button>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <button type="button" class="btn btn-facebook btn-user btn-block">
-                                            <i class="fab fa-facebook-f fa-fw"></i> {{ __('Login with Facebook') }}
                                         </button>
                                     </div>
                                 </form>
@@ -73,7 +53,7 @@
 
                                 @if (Route::has('password.request'))
                                     <div class="text-center">
-                                        <a class="small" href="{{ route('password.request') }}">
+                                        <a style="color: black" class="small" href="{{ route('password.request') }}">
                                             {{ __('Forgot Password?') }}
                                         </a>
                                     </div>
@@ -81,7 +61,7 @@
 
                                 @if (Route::has('register'))
                                     <div class="text-center">
-                                        <a class="small" href="{{ route('register') }}">{{ __('Create an Account!') }}</a>
+                                        <a style="color: black" class="small" href="{{ route('register') }}">{{ __('Create an Account!') }}</a>
                                     </div>
                                 @endif
                             </div>
